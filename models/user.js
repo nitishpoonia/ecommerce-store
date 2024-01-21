@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    // TODO: Come back here
+
     encry_password: {
       type: String,
       required: true,
@@ -41,7 +41,7 @@ const userSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-// TODO: Check back again in the future 03_07 video number
+
 userSchema
   .virtual("password")
   .set(function (password) {
